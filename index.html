@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./public/favicon.jpg">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>The-Beatles-Info</title>
-    <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./public/favicon.jpg">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>The-Beatles-Info</title>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
-    <div id="main">
-    <div class=" w3-top w3-display-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-          <a href="#home" class="w3-bar-item w3-button"><b>The Beatles Music Site</a>
+  <div id="main">
+    <div class="w3-top w3-display-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>The Beatles Music Site</a>
 
-          <div class="w3-right w3-hide-small">
-            <div class="w3-dropdown-hover">
-                <button onclick="myFunction()" class="w3-bar-item">The Beatles</button>
-                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">Rock</a>
-                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">&</a>
-                  <a href="#" class="w3-bar-item w3-button w3-animate-bottom">Roll</a>
-                </div>
-              </div>
-            <a href="#projects" class="w3-bar-item w3-button">Sound</a>
-            <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <div class="w3-hide-small w3-right">
+          <div class="w3-dropdown-hover">
+            <button onclick="myFunction()" class="w3-bar-item">The Beatles</button>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#" class="w3-bar-item w3-button w3-animate-bottom">Rock</a>
+              <a href="#" class="w3-bar-item w3-button w3-animate-bottom">&</a>
+              <a href="#" class="w3-bar-item w3-button w3-animate-bottom">Roll</a>
+            </div>
           </div>
+          <a href="#projects" class="w3-bar-item w3-button">Sound</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+
+        <div class="w3-right">
+          <button class="w3-button w3-white" onclick="w3_open()">☰</button>
         </div>
       </div>
 
-      <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-large"
-        onclick="w3_close()">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button">Rock</a>
-        <a href="#" class="w3-bar-item w3-button">Funk</a>
-        <a href="#" class="w3-bar-item w3-button">Blues</a>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-right" style="display:none;right:0" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a href="#projects" class="w3-bar-item w3-button">Sound</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+
+    <div class="cont-100vh w3-blue-grey w3-rest">
+      <div class="w3-animate-fading w3-display-middle">
+        <h1><b>Журнал Rolling Stone поставил The Beatles на первое место в списке величайших исполнителей всех
+            времён.</b></h1>
       </div>
+    </div>
 
-    <div class="cont-100vh w3-blue w3-rest">
-        <div class="w3-animate-fading w3-display-middle">
-        <h1><b>Журнал Rolling Stone поставил The Beatles на первое место в списке величайших исполнителей всех времён.</b></h1>
-        </div>
-    </div>    
+    <div class="cont-100vh w3-display-container w3-padding w3-purple w3-hover-pink w3-half">
+      <div class="w3-display-middle w3-center reveal">
 
-    <div class="cont-100vh w3-display-container w3-padding w3-purple w3-hover-pink w3-half"> 
-        <div class="w3-display-middle w3-center reveal">
-        
         <h1>Слушаем Yesterday</h1>
         <audio controls src="./assets/audio/the-beatles-yesterday.mp3"></audio>
         <p>
-          «Yesterday» (с англ. — «Вчера») — песня группы The Beatles из альбома Help! («На помощь!»), выпущенного в августе 1965 года (в США песня не вошла в альбом, однако вышла в виде сингла в сентябре 1965 года). 
-          Сочинена Полом Маккартни. При записи песни Yesterday впервые в истории «Битлз» в работе не участвовал никто из музыкантов, кроме Маккартни: аранжировка песни состоит только из акустической гитары, на которой играет Пол, и струнного квартета, партии которого сочинили вместе Джордж Мартин и Маккартни, что отличает «Yesterday» от всех остальных песен ансамбля, выпущенных к тому времени, и делает её одной из первых рок-баллад.
+          «Yesterday» (с англ. — «Вчера») — песня группы The Beatles из альбома Help! («На помощь!»), выпущенного в
+          августе 1965 года (в США песня не вошла в альбом, однако вышла в виде сингла в сентябре 1965 года).
+          Сочинена Полом Маккартни. При записи песни Yesterday впервые в истории «Битлз» в работе не участвовал никто из
+          музыкантов, кроме Маккартни: аранжировка песни состоит только из акустической гитары, на которой играет Пол, и
+          струнного квартета, партии которого сочинили вместе Джордж Мартин и Маккартни, что отличает «Yesterday» от
+          всех остальных песен ансамбля, выпущенных к тому времени, и делает её одной из первых рок-баллад.
         </p>
-        </div>
-    </div> 
+      </div>
+    </div>
 
-    <div class="cont-100vh w3-padding w3-display-container w3-theme-d1 w3-hover-orange w3-center w3-rest "> 
-        <div class="w3-display-middle">
+    <div class="cont-100vh w3-padding w3-display-container w3-theme-d1 w3-hover-orange w3-center w3-rest ">
+      <div class="w3-display-middle">
         <h1>Смотрим клип Yesterday</h1>
-            <video controls src="./assets/video/the-beatles-yesterday.mp4"></video>
-            <p>
-              «Yesterday» занимала первое место в хит-парадах США, Канады, Новой Зеландии и других стран, и остаётся популярной ныне. По данным американской организации по надзору за правами исполнителей Broadcast Music Incorporated, на 13 декабря 1999 года американское радио и телевидение транслировали Yesterday более семи миллионов раз. 
-            </p>
-            </div>
-    </div> 
+        <video controls src="./assets/video/the-beatles-yesterday.mp4"></video>
+        <p>
+          «Yesterday» занимала первое место в хит-парадах США, Канады, Новой Зеландии и других стран, и остаётся
+          популярной ныне. По данным американской организации по надзору за правами исполнителей Broadcast Music
+          Incorporated, на 13 декабря 1999 года американское радио и телевидение транслировали Yesterday более семи
+          миллионов раз.
+        </p>
+      </div>
+    </div>
 
-    <div class="cont-100vh w3-metro-dark-blue w3-rest w3-display-container">
-        <div class="w3-display-middle">
-            
+    <div class="cont-100vh w3-dark-grey w3-rest w3-display-container">
+      <div class="w3-display-middle">
+
         <div class="container_ofus">
-            <div class="flipper" id="target">
-                <div class="front">
-                  <a href="#target" class="home button">Краткая информация</a>
-               
-                <h1>The Beatles</h1>
-                  </div>
-                <div class="back">
-                  <a href="#close" class="close button"><i class="fa fa-home"></i></a>
-                  <div class="inner">
-                    <h2>Краткая информация</h2>
-                    <p>
-                      Журнал Rolling Stone поставил The Beatles на первое место в списке величайших исполнителей всех времён. В списке «500 величайших альбомов всех времён по версии журнала Rolling Stone» первое место занимает альбом Sgt. Pepper’s Lonely Hearts Club Band. Группа завоевала десять наград «Грэмми». Все четыре музыканта, в знак признания заслуг перед страной, награждены орденами Британской империи (MBE). По состоянию на 2001 год только в США было продано свыше 163 миллионов экземпляров альбомов и фильмов группы. Общий объём продаж единиц медиаконтента (диски и кассеты), связанного с группой, на этот момент превысил один миллиард экземпляров.  
-                    </p>
-                    </div>
-                  </div>
-                </div>
+          <div class="flipper" id="target">
+            <div class="front">
+              <a href="#target" class="home button">Краткая информация</a>
+
+              <h1>The Beatles</h1>
+            </div>
+            <div class="back">
+              <a href="#close" class="close button"><i class="fa fa-home"></i></a>
+              <div class="inner">
+                <h2>Краткая информация</h2>
+                <p>
+                  В списке «500 величайших альбомов всех времён по версии журнала Rolling Stone» первое место занимает
+                  альбом Sgt. Pepper’s Lonely Hearts Club Band. Группа завоевала десять наград «Грэмми». Все четыре
+                  музыканта, в знак признания заслуг перед страной, награждены орденами Британской империи (MBE).
+                </p>
+              </div>
+            </div>
+          </div>
 
 
         </div>
-    </div> 
-</div>
-   <div class="w3-display-container">
-    <div class="w3-bottom w3-white w3-center">
-        
-        <button class="w3-button w3-white w3-xlarge" onclick="w3_open()">☰</button>
-     </div>
-   </div> 
-   <!-- Sidebar -->
- 
-  <script src="./script.js"></script>
-</body>
-</html>
+      </div>
+    </div>
+    <div class="w3-display-container">
+      <div class="w3-bottom w3-white w3-center">
 
+        <!-- <button class="w3-button w3-white w3-xlarge" onclick="w3_open()">☰</button> -->
+        🎶
+      </div>
+    </div>
+    <!-- Sidebar -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
